@@ -1,6 +1,6 @@
 {
   "name": "@luka-cat-mimi/n8n-nodes-heic-convert",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n 社区节点：HEIC/HEIF 图片转 PNG/JPEG 格式转换",
   "keywords": [
     "n8n",
