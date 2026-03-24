@@ -1,0 +1,63 @@
+{
+  "name": "@luka-cat-mimi/n8n-nodes-heic-convert",
+  "version": "0.1.0",
+  "description": "n8n 社区节点：HEIC/HEIF 图片转 PNG/JPEG 格式转换",
+  "keywords": [
+    "n8n",
+    "n8n-node",
+    "n8n-community-node-package",
+    "heic",
+    "heif",
+    "image",
+    "convert",
+    "png",
+    "jpeg"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/luka-n8n-nodes/n8n-nodes-heic-convert#readme",
+  "author": {
+    "name": "luka-cat",
+    "email": "luka.cat.mimi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luka-n8n-nodes/n8n-nodes-heic-convert.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "npx rimraf dist && tsc && npx gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes --write",
+    "lint": "eslint nodes package.json",
+    "lintfix": "eslint nodes package.json --fix"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [],
+    "nodes": [
+      "dist/nodes/HeicConvert/HeicConvert.node.js"
+    ]
+  },
+  "dependencies": {
+    "heic-convert": "^2.1.0"
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "*",
+    "@types/node": "^20.19.37",
+    "eslint": "9.39.4",
+    "gulp": "^5.0.1",
+    "prettier": "3.8.1",
+    "release-it": "19.2.4",
+    "typescript": "5.9.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
